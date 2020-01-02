@@ -21,7 +21,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+									<div class="viewed_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">Rp 100.000<br><span>Rp 125.000</span></div>
 										<div class="viewed_name"><a href="#">Tas Rajut</a></div>
@@ -126,14 +126,14 @@
 
 						<div class="owl-carousel owl-theme brands_slider">
 							
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_1.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_2.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_3.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_4.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_5.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_6.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_7.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php base_url('') ?>assets/template/images/brands_8.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_1.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_2.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_3.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_4.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_5.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_6.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_7.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/brands_8.jpg" alt=""></div></div>
 
 						</div>
 						
@@ -155,7 +155,7 @@
 				<div class="col">
 					<div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
 						<div class="newsletter_title_container">
-							<div class="newsletter_icon"><img src="<?php base_url('') ?>assets/template/images/send.png" alt=""></div>
+							<div class="newsletter_icon"><img src="<?php echo base_url('') ?>assets/template/images/send.png" alt=""></div>
 							<div class="newsletter_title">Daftar untuk berita terbaru</div>
 							<div class="newsletter_text"><p>dan dapatkan diskon 20% untuk pembelian pertama.</p></div>
 						</div>
@@ -265,10 +265,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 						<div class="logos ml-sm-auto">
 							<ul class="logos_list">
-								<li><a href="#"><img src="<?php base_url('') ?>assets/template/images/logos_1.png" alt=""></a></li>
-								<li><a href="#"><img src="<?php base_url('') ?>assets/template/images/logos_2.png" alt=""></a></li>
-								<li><a href="#"><img src="<?php base_url('') ?>assets/template/images/logos_3.png" alt=""></a></li>
-								<li><a href="#"><img src="<?php base_url('') ?>assets/template/images/logos_4.png" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo base_url('') ?>assets/template/images/logos_1.png" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo base_url('') ?>assets/template/images/logos_2.png" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo base_url('') ?>assets/template/images/logos_3.png" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo base_url('') ?>assets/template/images/logos_4.png" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -278,18 +278,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 </div>
 
-<script src="<?php base_url('') ?>assets/template/js/jquery-3.3.1.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/styles/bootstrap4/popper.js"></script>
-<script src="<?php base_url('') ?>assets/template/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/greensock/TweenMax.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/greensock/TimelineMax.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/greensock/animation.gsap.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/slick-1.8.0/slick.js"></script>
-<script src="<?php base_url('') ?>assets/template/plugins/easing/easing.js"></script>
-<script src="<?php base_url('') ?>assets/template/js/custom.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/js/jquery-3.3.1.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/styles/bootstrap4/popper.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/greensock/TweenMax.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/greensock/TimelineMax.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/greensock/animation.gsap.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/slick-1.8.0/slick.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/easing/easing.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/js/custom.js"></script>
 </body>
 
 </html>

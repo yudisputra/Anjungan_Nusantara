@@ -1,11 +1,13 @@
 	
-	<!-- Banner -->
+	<!--
+		
+	 -->
 
 	<div class="banner">
 		<div class="banner_background" style="background-image:url(images/banner_background.jpg)"></div>
 		<div class="container fill_height">
 			<div class="row fill_height">
-				<div class="banner_product_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+				<div class="banner_product_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 				<div class="col-lg-5 offset-lg-4 fill_height">
 					<div class="banner_content">
 						<h1 class="banner_text" style="color: #c62828;">era baru umkm</h1>
@@ -38,7 +40,7 @@
 								
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+									<div class="deals_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="shop.html">Kerajinan Tangan</a></div>
@@ -82,7 +84,7 @@
 
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+									<div class="deals_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="shop.html">Kerajinan Tangan</a></div>
@@ -126,7 +128,7 @@
 
 								<!-- Deals Item -->
 								<div class="owl-item deals_item">
-									<div class="deals_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+									<div class="deals_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 									<div class="deals_content">
 										<div class="deals_info_line d-flex flex-row justify-content-start">
 											<div class="deals_item_category"><a href="shop.html">Kerajinan Tangan</a></div>
@@ -198,7 +200,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Kalung Kerajinan Tangan</a></div></div>
@@ -223,7 +225,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 25.000</div>
 												<div class="product_name"><div><a href="product.html">Bumbu Rempah</a></div></div>
@@ -248,7 +250,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Kalung Kerajinan Tangan</a></div></div>
@@ -273,7 +275,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 25.000</div>
 												<div class="product_name"><div><a href="product.html">Bumbu Rempah</a></div></div>
@@ -298,7 +300,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">Rp 100.000</div>
 												<div class="product_name"><div><a href="product.html">Tas Rajut Batik</a></div></div>
@@ -323,7 +325,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 100.000</div>
 												<div class="product_name"><div><a href="product.html">Lemari Ukir</a></div></div>
@@ -348,7 +350,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 50.000</div>
 												<div class="product_name"><div><a href="product.html">Lukisan Wajah</a></div></div>
@@ -373,7 +375,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Jamu Nyonya 1kg</a></div></div>
@@ -398,7 +400,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -423,7 +425,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -448,7 +450,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -473,7 +475,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -498,7 +500,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -523,7 +525,7 @@
 									<<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -548,7 +550,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -573,7 +575,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -598,7 +600,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -632,7 +634,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">Rp 100.000<span>Rp 125.000</span></div>
 												<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -657,7 +659,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Kalung Kerajinan Tangan</a></div></div>
@@ -682,7 +684,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 25.000</div>
 												<div class="product_name"><div><a href="product.html">Bumbu Rempah</a></div></div>
@@ -707,7 +709,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">Rp 100.000<span>Rp 125.000</span></div>
 												<div class="product_name"><div><a href="product.html">Tas Rajut Batik</a></div></div>
@@ -732,7 +734,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 100.000</div>
 												<div class="product_name"><div><a href="product.html">Lemari Ukir</a></div></div>
@@ -757,7 +759,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 50.000</div>
 												<div class="product_name"><div><a href="product.html">Lukisan Wajah</a></div></div>
@@ -782,7 +784,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Jamu Nyonya 1kg</a></div></div>
@@ -807,7 +809,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -832,7 +834,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -857,7 +859,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -882,7 +884,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -914,7 +916,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">Rp 100.000<span>Rp 125.000</span></div>
 												<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -939,7 +941,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Kalung Kerajinan Tangan</a></div></div>
@@ -964,7 +966,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 25.000</div>
 												<div class="product_name"><div><a href="product.html">Bumbu Rempah</a></div></div>
@@ -989,7 +991,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price discount">Rp 100.000<span>Rp 125.000</span></div>
 												<div class="product_name"><div><a href="product.html">Tas Rajut Batik</a></div></div>
@@ -1014,7 +1016,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 100.000</div>
 												<div class="product_name"><div><a href="product.html">Lemari Ukir</a></div></div>
@@ -1039,7 +1041,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 50.000</div>
 												<div class="product_name"><div><a href="product.html">Lukisan Wajah</a></div></div>
@@ -1064,7 +1066,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 200.000</div>
 												<div class="product_name"><div><a href="product.html">Jamu Nyonya 1kg</a></div></div>
@@ -1089,7 +1091,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -1114,7 +1116,7 @@
 									<div class="featured_slider_item">
 										<div class="border_active"></div>
 										<div class="product_item d-flex flex-column align-items-center justify-content-center text-center">
-											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php base_url('') ?>assets/template/images/" alt=""></div>
+											<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="<?php echo base_url('') ?>assets/template/images/" alt=""></div>
 											<div class="product_content">
 												<div class="product_price">Rp 75.000</div>
 												<div class="product_name"><div><a href="product.html">Gelang Tangan</a></div></div>
@@ -1171,7 +1173,7 @@
 							<!-- Popular categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="<?php base_url('') ?>assets/template/images/popular_1.png" alt=""></div>
+									<div class="popular_category_image"><img src="<?php echo base_url('') ?>assets/template/images/popular_1.png" alt=""></div>
 									<div class="popular_category_text"><a href="shop.html">Aksesoris</a></div>
 								</div>
 							</div>
@@ -1179,7 +1181,7 @@
 							<!-- Popular categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="<?php base_url('') ?>assets/template/images/popular_2.png" alt=""></div>
+									<div class="popular_category_image"><img src="<?php echo base_url('') ?>assets/template/images/popular_2.png" alt=""></div>
 									<div class="popular_category_text"><a href="shop.html">Kuliner</a></div>
 								</div>
 							</div>
@@ -1187,7 +1189,7 @@
 							<!-- Popular categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="<?php base_url('') ?>assets/template/images/popular_3.png" alt=""></div>
+									<div class="popular_category_image"><img src="<?php echo base_url('') ?>assets/template/images/popular_3.png" alt=""></div>
 									<div class="popular_category_text"><a href="shop.html">Fashion</a></div>
 								</div>
 							</div>
@@ -1195,7 +1197,7 @@
 							<!-- Popular categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="<?php base_url('') ?>assets/template/images/popular_4.png" alt=""></div>
+									<div class="popular_category_image"><img src="<?php echo base_url('') ?>assets/template/images/popular_4.png" alt=""></div>
 									<div class="popular_category_text"><a href="shop.html">Kerajinan Tangan</a></div>
 								</div>
 							</div>
@@ -1203,7 +1205,7 @@
 							<!-- Popular categories Item -->
 							<div class="owl-item">
 								<div class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="<?php base_url('') ?>assets/template/images/popular_5.png" alt=""></div>
+									<div class="popular_category_image"><img src="<?php echo base_url('') ?>assets/template/images/popular_5.png" alt=""></div>
 									<div class="popular_category_text"><a href="shop.html">Pernak Pernik</a></div>
 								</div>
 							</div>
@@ -1244,7 +1246,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1269,7 +1271,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1294,7 +1296,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1319,7 +1321,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1344,7 +1346,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1369,7 +1371,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1394,7 +1396,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1419,7 +1421,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1444,7 +1446,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1469,7 +1471,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1494,7 +1496,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1526,7 +1528,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>aseets/template/images/" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>aseets/template/images/" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1827,7 +1829,7 @@
 										<div class="arrivals_slider_item">
 											<div class="border_active"></div>
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php base_url('') ?>aseets/template/images/" alt=""></a></div>
+												<div class="viewed_image d-flex flex-column align-items-center justify-content-center"><a href="product.html"><img src="<?php echo base_url('') ?>aseets/template/images/" alt=""></a></div>
 												<div class="product_content">
 													<div class="product_price">Rp 125.000</div>
 													<div class="product_name"><div><a href="product.html">Tas Rajut Kerajinan Tangan</a></div></div>
@@ -1867,7 +1869,7 @@
 							<div class="col-lg-3">
 								<div class="arrivals_single clearfix">
 									<div class="d-flex flex-column align-items-center justify-content-center">
-										<div class="arrivals_single_image"><a href="product.html"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
+										<div class="arrivals_single_image"><a href="product.html"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></a></div>
 										<div class="arrivals_single_content">
 											<div class="arrivals_single_category"><a href="shop.html">Fashion</a></div>
 											<div class="arrivals_single_name_container clearfix">

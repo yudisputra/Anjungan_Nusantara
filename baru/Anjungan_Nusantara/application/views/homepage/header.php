@@ -6,14 +6,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Anjungan shop project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/styles/bootstrap4/bootstrap.min.css">
-<link href="<?php base_url('') ?>assets/template/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/plugins/slick-1.8.0/slick.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="<?php base_url('') ?>assets/template/styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/bootstrap4/bootstrap.min.css">
+<link href="<?php echo base_url('') ?>assets/template/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/slick-1.8.0/slick.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/responsive.css">
 
 </head>
 
@@ -31,11 +31,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php base_url('') ?>assets/template/images/phone.png" alt=""></div>(031) - 8894850</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php base_url('') ?>assets/template/images/mail.png" alt=""></div><a href="mailto:anjungan_nusantara@gmail.com">anjungan_nusantara@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php echo base_url('') ?>assets/template/images/phone.png" alt=""></div>(031) - 8894850</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php echo base_url('') ?>assets/template/images/mail.png" alt=""></div><a href="mailto:anjungan_nusantara@gmail.com">anjungan_nusantara@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_user">
-								<div class="user_icon"><img src="<?php base_url('') ?>assets/template/images/user.svg" alt=""></div>
+								<div class="user_icon"><img src="<?php echo base_url('') ?>assets/template/images/user.svg" alt=""></div>
 								<div><a href="<?php echo base_url()?>Register">Daftar</a></div>
 								<div><a href="#">Masuk</a></div>
 							</div>
@@ -80,7 +80,7 @@
 												</ul>
 											</div>
 										</div>
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="<?php base_url('') ?>assets/template/images/search.png" alt=""></button>
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="<?php echo base_url('') ?>assets/template/images/search.png" alt=""></button>
 									</form>
 								</div>
 							</div>
@@ -95,11 +95,11 @@
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
-										<img src="<?php base_url('') ?>assets/template/images/cart.png" alt="">
+										<img src="<?php echo base_url('') ?>assets/template/images/cart.png" alt="">
 										<div class="cart_count"><span>1</span></div>
 									</div>
 									<div class="cart_content">
-										<div class="cart_text"><a href="<?php base_url('') ?>Welcome/Keranjang/">Keranjang</a></div>
+										<div class="cart_text"><a href="<?php echo base_url('') ?>Welcome/Keranjang/">Keranjang</a></div>
 										<div class="cart_price">Rp 100.000</div>
 									</div>
 								</div>
@@ -334,8 +334,8 @@
 							</ul>
 							
 							<div class="menu_contact">
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="<?php base_url('') ?>assets/template/images/phone_white.png" alt=""></div>(031) - 8894850</div>
-								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="<?php base_url('') ?>assets/template/images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">humaidialmasmed@gmail.com</a></div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="<?php echo base_url('') ?>assets/template/images/phone_white.png" alt=""></div>(031) - 8894850</div>
+								<div class="menu_contact_item"><div class="menu_contact_icon"><img src="<?php echo base_url('') ?>assets/template/images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">humaidialmasmed@gmail.com</a></div>
 							</div>
 						</div>
 					</div>
