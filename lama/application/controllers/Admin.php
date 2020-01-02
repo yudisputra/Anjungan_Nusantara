@@ -33,7 +33,6 @@ class Admin extends CI_Controller {
 			'sidebar' => 'admin/sidebar',
 			'content' => 'admin/dashboard',
 			'footer' => 'admin/footer',
-
 		];
 		$this->load->view('admin/template',$data);
 	}
