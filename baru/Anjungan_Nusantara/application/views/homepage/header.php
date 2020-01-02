@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="col d-flex flex-row">
 						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php base_url('') ?>assets/template/images/phone.png" alt=""></div>(031) - 8894850</div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php base_url('') ?>assets/template/images/mail.png" alt=""></div><a href="mailto:humaidialmasmed@gmail.com">humaidialmasmed@gmail.com</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php base_url('') ?>assets/template/images/mail.png" alt=""></div><a href="mailto:anjungan_nusantara@gmail.com">anjungan_nusantara@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_user">
 								<div class="user_icon"><img src="<?php base_url('') ?>assets/template/images/user.svg" alt=""></div>
@@ -99,7 +99,7 @@
 										<div class="cart_count"><span>1</span></div>
 									</div>
 									<div class="cart_content">
-										<div class="cart_text"><a href="cart.html">Keranjang</a></div>
+										<div class="cart_text"><a href="<?php base_url('') ?>Welcome/Keranjang/">Keranjang</a></div>
 										<div class="cart_price">Rp 100.000</div>
 									</div>
 								</div>

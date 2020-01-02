@@ -12,4 +12,14 @@ class Welcome extends CI_Controller {
 		];
 		$this->load->view('homepage/template',$data);
 	}
+
+	public function Keranjang(){
+		$data = [
+			'header' => 'homepage/header',
+			'content' => 'homepage/keranjang',
+			'footer' => 'homepage/footer',
+		];
+		$this->load->view('homepage/template',$data);
+		
+	}
 }

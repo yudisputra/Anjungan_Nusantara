@@ -8,7 +8,7 @@
 				<div class="banner_product_image"><img src="<?php base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
 				<div class="col-lg-5 offset-lg-4 fill_height">
 					<div class="banner_content">
-						<h1 class="banner_text">era baru umkm</h1>
+						<h1 class="banner_text" style="color: #c62828;">era baru umkm</h1>
 						<div class="banner_price"><span>Rp 125.000</span>Rp 100.000</div>
 						<div class="banner_product_name">Tas Rajut Kerajinan Tangan</div>
 						<div class="button banner_button"><a href="product.html">Belanja Sekarang</a></div>
