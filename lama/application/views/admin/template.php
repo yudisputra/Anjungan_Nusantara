@@ -1,7 +1,7 @@
 <?php
 
-if(isset($header)) :
-	$this->load->view($header);
+if(isset($sidebar)) :
+	$this->load->view($sidebar);
 endif;
 
 $this->load->view($content);
