@@ -14,6 +14,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/slick-1.8.0/slick.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/cart_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/cart_responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/product_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/product_responsive.css">
 
 </head>
 

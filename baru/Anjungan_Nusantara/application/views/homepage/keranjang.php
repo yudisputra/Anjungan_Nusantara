@@ -1,6 +1,6 @@
-	<!-- Cart -->
+<!-- Cart -->
 
-	<div class="cart_section">
+<div class="cart_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1">
@@ -9,7 +9,7 @@
 						<div class="cart_items">
 							<ul class="cart_list">
 								<li class="cart_item clearfix">
-									<div class="cart_item_image"><img src="images/banner_product2.jpg" alt=""></div>
+									<div class="cart_item_image"><img src="https://place-hold.it/250x250" alt=""></div>
 									<div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
 										<div class="cart_item_name cart_info_col">
 											<div class="cart_item_title">Nama Barang</div>

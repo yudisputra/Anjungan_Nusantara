@@ -21,7 +21,7 @@
 							<!-- Recently Viewed Item -->
 							<div class="owl-item">
 								<div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-									<div class="viewed_image"><img src="<?php echo base_url('') ?>assets/template/images/banner_product1.png" alt=""></div>
+									<div class="viewed_image"><img src="https://place-hold.it/250x250" alt=""></div>
 									<div class="viewed_content text-center">
 										<div class="viewed_price">Rp 100.000<br><span>Rp 125.000</span></div>
 										<div class="viewed_name"><a href="#">Tas Rajut</a></div>
@@ -114,7 +114,7 @@
 		</div>
 	</div>
 
-	<!-- Brands -->
+<!-- Brands -->
 
 	<div class="brands">
 		<div class="container">

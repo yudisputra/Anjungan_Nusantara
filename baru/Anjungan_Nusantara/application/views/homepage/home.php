@@ -1,7 +1,5 @@
 	
-	<!--
-		
-	 -->
+	<!-- Banner -->
 
 	<div class="banner">
 		<div class="banner_background" style="background-image:url(images/banner_background.jpg)"></div>

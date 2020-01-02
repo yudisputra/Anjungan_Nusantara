@@ -22,4 +22,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('homepage/template',$data);
 		
 	}
+
+	public function Detail(){
+		$data = [
+			'header' => 'homepage/header',
+			'content' => 'homepage/detail',
+			'footer' => 'homepage/footer',
+		];
+		$this->load->view('homepage/template', $data);
+		
+	}
 }
