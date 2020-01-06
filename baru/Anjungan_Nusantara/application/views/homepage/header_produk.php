@@ -15,11 +15,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/responsive.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/cart_styles.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/cart_responsive.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/product_styles.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/product_responsive.css">
-</head>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/shop_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('') ?>assets/template/styles/shop_responsive.css"></head>
 
 <body>
 

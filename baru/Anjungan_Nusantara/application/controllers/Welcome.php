@@ -81,7 +81,7 @@ class Welcome extends CI_Controller {
 
 	public function SemuaProduk(){
 		$data = [
-			'header' => 'homepage/header',
+			'header' => 'homepage/header_produk',
 			'content' => 'homepage/allproduk',
 			'footer' => 'homepage/footer',
 		];
