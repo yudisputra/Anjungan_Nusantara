@@ -33,7 +33,7 @@
                       <td><?php echo $key->no_rekening ?></td>
                       <td><?php echo $key->atas_nama ?></td>
                       <td class="actions">
-                         <button type="submit" class="btn btn-success" id="<?php echo $key->bank_id ?>" data-target="#exampleUpdate" data-toggle="modal">Update</button>
+                         <button type="submit" class="btn btn-success" id="<?php echo $key->bank_id ?>" nama='<?php echo $key->bank_nama ?>' rekening='<?php echo $key->no_rekening ?>' atas_nama='<?php echo $key->atas_nama ?>'  data-target="#exampleUpdate" data-toggle="modal">Update</button>
                          <button type="submit" class="btn btn-warning" id="<?php echo $key->bank_id ?>">Hapus</button>
                       </td>
                     </tr>

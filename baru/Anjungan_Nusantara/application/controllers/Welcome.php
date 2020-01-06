@@ -80,12 +80,21 @@ class Welcome extends CI_Controller {
 	}
 
 	public function SemuaProduk(){
+		$all = $this->Produk_model->get_all();
+
 		$data = [
-			'header' => 'homepage/header_produk',
+			'header'  => 'homepage/header_produk',
+			'data'	  => $all,
 			'content' => 'homepage/allproduk',
-			'footer' => 'homepage/footer',
+			'footer'  => 'homepage/footer',
 		];
 		$this->load->view('homepage/template',$data);
+		
+	}
+
+	public function page(){
+	
+		$this->load->view('homepage/coba1'	);
 		
 	}
 }

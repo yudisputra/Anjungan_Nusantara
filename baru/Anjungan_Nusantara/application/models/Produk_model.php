@@ -5,6 +5,18 @@ class Produk_model extends CI_Model {
 
 	var $table = "produk";
 
+	public function get_all()
+    {
+     	$query = $this->db->get($this->table);
+        return $query->result();
+	}
+
+	public function get_kategori($kategori)
+    {
+        $query =  $this->db->query("SELECT * FROM produk as p inner join usaha as u on u.usaha_id = p.produk_usaha_id inner join kategori as kr on pr.kategori_id = u.usaha_profile_id inner join subkategori as subka on subka.subkategori_id = p.produk_subkategori_id where pr.profile_id=$kategori");
+        return $query->result();
+	}
+
 	public function GetProduk($id)
     {
         $query =  $this->db->query("SELECT p.produk_id,p.produk_nama, p.produk_harga,p.produk_harga_jual,p.produk_stock,p.produk_deskripsi,p.produk_subkategori_id,p.produk_usaha_id,p.produk_status, subka.subkategori_nama FROM produk as p inner join usaha as u on u.usaha_id = p.produk_usaha_id inner join profile as pr on pr.profile_id = u.usaha_profile_id inner join subkategori as subka on subka.subkategori_id = p.produk_subkategori_id where pr.profile_id=$id");

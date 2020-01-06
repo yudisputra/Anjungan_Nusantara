@@ -70,7 +70,18 @@
     <script type="text/javascript">
       $(document).ready( function () {
 
+
+
           $('.btn-success').click(function(){ 
+            $("#idBankUpdate")  .attr('value', '#000000');
+
+            $("#namaBankUpdate").attr('value', '000000');
+
+            $("#norekeningBankUpdate").val("Dolly Duck");
+
+            $("#atasNamaUpdate").val("Dolly Duck");
+
+
                $.ajax({
                                   url : "<?php echo base_url();?>Admin/proses_bank",
                                   method : "POST",
@@ -92,6 +103,7 @@
              var updateNama =  $('#namaBankUpdate').val();
              var updateNoRekening = $('#norekeningBankUpdate').val();
              var updateAtasNama = $('#atasNamaUpdate').val();
+
 
              if( updateNama== ""){
                  $('#errorUpdateNama').html("Nama tidak Boleh Kosong");
