@@ -176,8 +176,12 @@ class Admin extends CI_Controller {
 
     public function daftar_kategoridansub()
 	{
+		$kategori = $this->Kategori_model->get_all();
+		$subkategori = $this->Kategori_model->get_kategori_dan_sub();
 		$data=[
-			'title'=>"Halaman Admin",
+			'kategori' => $kategori,
+			'subkategori' => $subkategori,
+			'title'=>"Halaman Daftar Kategori dan Sub",
 			'ctrlname' => $this->ctrlname,
 			'headers' => "dashboard/header",
 			'contents' => "daftar_kategoridansub/daftarkategoridansub_view",
@@ -186,7 +190,98 @@ class Admin extends CI_Controller {
 		];
         $this->load->view('admin/layouts/template',$data);
         $this->load->view('admin/contents/daftar_kategoridansub/ajax_crud', $data);
-    }
+	}
+	
+	public function proses_kategori()
+	{
+		 $id = $this->input->post('id');
+		 $nama = $this->input->post('nama');
+		 $tipe = $this->input->post('tipe');
+
+		 if($tipe == "baru"){
+		 	$data = array(
+		 		'kategori_nama' => $nama
+		 	);
+		 	if($this->Kategori_model->insert($data)){
+		 		$hasil = "Tambah Kategori Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Tambah Kategori Gagal";
+		 	}
+		 }
+		 else if($tipe == "hapus"){
+		 	$data = array(
+		 		'kategori_id' => $id
+		 	);
+		 	if($this->Kategori_model->delete($data)){
+		 		$hasil = "Hapus Kategori Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Hapus Kategori Gagal";
+		 	}
+		 }
+		 else if($tipe == "update"){
+		 	$data = array(
+		 		'kategori_nama' => $nama
+		 	);
+		 	if($this->Kategori_model->update($data,$id)){
+		 		$hasil = "Update Kategori Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Update Kategori Gagal";
+		 	}
+		 }
+
+		 echo json_encode($hasil);
+	}
+
+	public function proses_subkategori()
+	{
+		 $id = $this->input->post('id');
+		 $idkategori = $this->input->post("idkategori");
+		 $nama = $this->input->post('nama');
+		 $tipe = $this->input->post('tipe');
+
+		 if($tipe == "baru"){
+		 	$data = array(
+		 		'subkategori_nama' => $nama,
+		 		'subkategori_kategori_id' => $idkategori
+		 	);
+		 	if($this->SubKategori_model->insert($data)){
+		 		$hasil = "Tambah Sub-Kategori Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Tambah Sub-Kategori Gagal";
+		 	}
+		 }
+		 else if($tipe == "ambil"){
+		 	$hasil = $this->SubKategori_model->get_where($idkategori);
+		 }
+		 else if($tipe == "hapus"){
+		 	$data = array(
+		 		'subkategori_id' => $id
+		 	);
+		 	if($this->SubKategori_model->delete($data)){
+		 		$hasil = "Hapus Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Hapus Gagal";
+		 	}
+		 }
+		 else if($tipe == "update"){
+		 	$data = array(
+		 		'subkategori_nama' => $nama
+		 	);
+		 	if($this->SubKategori_model->update($data,$id)){
+		 		$hasil = "Update Berhasil";
+		 	}
+		 	else{
+		 		$hasil = "Update Gagal";
+		 	}
+		 }
+
+		 echo json_encode($hasil);
+	}
 
     public function daftar_ukm()
 	{

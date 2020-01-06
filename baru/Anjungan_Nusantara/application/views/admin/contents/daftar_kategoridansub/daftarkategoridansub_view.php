@@ -23,12 +23,60 @@
           <div class="tab-pane active" id="exampleTabsLineLeftOne" role="tabpanel">
             <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal2"><i class="icon md-plus-circle"></i>Tambah Subkategori</button>
             <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal1"><i class="icon md-plus-circle"></i>Tambah Kategori</button>
-            <table id="table-data1"class="table table-hover dataTable table-striped w-full" data-url="<?php echo base_url($ctrlname.'/get_list_position') ?>"></table>
+            <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Kategori</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $i = 1; foreach ($kategori as $key) { ?>
+                    <tr>
+                      <td><?php echo $i ?></td>
+                      <td><?php echo $key->kategori_nama ?></td>
+                      <td class="actions">
+                         <!-- <button type="submit" class="btn btn-info btnGenerateKategori" id="<?php echo $key->kategori_id ?>" value="<?php echo $key->kategori_nama ?>">Sub-Kategori</button> -->
+                         <button type="submit" class="btn btn-success btnUpdateKategori" data-target="#exampleUpdateKategori" data-toggle="modal" id="<?php echo $key->kategori_id ?>" value="<?php echo $key->kategori_nama ?>">Update</button>
+                         <button type="submit" class="btn btn-warning btnHapusKategori" id="<?php echo $key->kategori_id ?>">Hapus</button>
+                      </td>
+                    </tr>
+                <?php $i++ ;} ?>
+                <!-- <tr>
+                  <td>Damon</td>
+                  <td>5516 Adolfo Green</td>
+                  <td>Littelhaven</td>
+                </tr> -->
+              </tbody>
+            </table>
           </div>
           <div class="tab-pane" id="exampleTabsLineLeftTwo" role="tabpanel">
             <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal2"><i class="icon md-plus-circle"></i>Tambah Subkategori</button>
             <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal1"><i class="icon md-plus-circle"></i>Tambah Kategori</button>
-            <table id="table-data2"class="table table-hover dataTable table-striped w-full" data-url="<?php echo base_url($ctrlname.'/get_list_position') ?>"></table>
+            <table id="tabelsubkategori" class="table table-hover dataTable table-striped w-full" data-plugin="dataTable" >
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Sub Kategori</th>
+                  <th>Kategori</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="bodysubkategori">
+              <?php $i = 1; foreach ($subkategori as $key) { ?>
+                    <tr>
+                      <td><?php echo $i ?></td>
+                      <td><?php echo $key->subkategori_nama ?></td>
+                      <td><?php echo $key->kategori_nama ?></td>
+                      <td class="actions">
+                         <button type="submit" class="btn btn-success btnUpdateSubKategori" data-target="#exampleUpdateSubKategori" data-toggle="modal" id="<?php echo $key->subkategori_id ?>" value="<?php echo $key->subkategori_nama ?>">Update</button>
+                         <button type="submit" class="btn btn-warning btnHapusSubKategori" id="<?php echo $key->subkategori_id ?>">Hapus</button>
+                      </td>
+                    </tr>
+                <?php $i++ ;} ?>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -37,72 +85,5 @@
 </div>
 
 <script>
-  // var url_register = '<?php echo base_url($ctrlname.'/check') ?>'
-  $(document).ready(function(){
-    var table_url = $('#table-data1').data('url');
-    var table_url = $('#table-data2').data('url');
-    $('#table-data1').DataTable({
-      "ajax":{
-        'url' : table_url,
-      },
-      "columns":[{
-        "title" : "#",
-        "width": "5%",
-        "data": null,
-        "visible": true,
-        "class": "text-center",
-        render:(data,type,row, meta)=>{
-          return meta.row + meta.settings._iDisplayStart+1;
-        }
-      },{
-        "title" : "Position Name",
-        "width" : "200px",
-        "data" : "applicator_position"
-      },{
-        "title" : "Actions",
-        "width" : "15%",
-        "class" : "text-center",
-        "data": (data, type, row) => {
-          let _return = "";
-          _return += '<a href="javascript:void(0)" class="btn btn-icon btn-success waves-effect waves-classic update-class"data-id="'+data.id+'"> <i class="icon md-edit"></i></a> &nbsp;'+''+'<a href="javascript:void(0)" data-id="'+data.id+'"" class="btn btn-icon btn-danger waves-effect waves-classic delete-class"> <i class="icon md-delete"></i></a>';
-          
-          return _return;
-        }
-      }]
-    });
-    $('#table-data2').DataTable({
-      "ajax":{
-        'url' : table_url,
-      },
-      "columns":[{
-        "title" : "#",
-        "width": "5%",
-        "data": null,
-        "visible": true,
-        "class": "text-center",
-        render:(data,type,row, meta)=>{
-          return meta.row + meta.settings._iDisplayStart+1;
-        }
-      },{
-        "title" : "Position Name",
-        "width" : "200px",
-        "data" : "applicator_position"
-      },{
-        "title" : "Actions",
-        "width" : "15%",
-        "class" : "text-center",
-        "data": (data, type, row) => {
-          let _return = "";
-          _return += '<a href="javascript:void(0)" class="btn btn-icon btn-success waves-effect waves-classic update-class"data-id="'+data.id+'"> <i class="icon md-edit"></i></a> &nbsp;'+''+'<a href="javascript:void(0)" data-id="'+data.id+'"" class="btn btn-icon btn-danger waves-effect waves-classic delete-class"> <i class="icon md-delete"></i></a>';
-          
-          return _return;
-        }
-      }]
-    });
-  });
-
-  function reload_table() {
-    $('#table-data').DataTable().ajax.reload(null,false);
-  }
-
+  
 </script>
