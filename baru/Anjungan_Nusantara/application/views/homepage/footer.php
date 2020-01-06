@@ -290,6 +290,40 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?php echo base_url('') ?>assets/template/plugins/slick-1.8.0/slick.js"></script>
 <script src="<?php echo base_url('') ?>assets/template/plugins/easing/easing.js"></script>
 <script src="<?php echo base_url('') ?>assets/template/js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready( function () {
+
+        $('#cekkeranjang').click(function(){ 
+			var userName = "<?php echo  $this->session->userdata('username'); ?>";
+			if(userName==""){
+				window.alert('Anda harus Login terlebih dahulu.');
+    			window.location.href= "<?php echo base_url()?>Login";
+			}
+			else{
+				var id = $('#idbarang').val();
+				var qty = $('#quantity_input').val();
+				var nama = $('#namabarang').html();
+				var harga = $('#hargabarang').html();
+				var realharga = harga.split(" ");
+				var fotoproduk = $('#fotofotoproduk').attr('src');
+
+				// console.log(id, qty, nama, realharga[1], fotoproduk);
+				$.ajax({
+				url : "<?php echo base_url();?>Keranjang/tambah",
+				method : "POST",
+				data: {id: id, qty : qty, nama : nama, harga : realharga[1], fotoproduk : fotoproduk},
+				async : false,
+				dataType : 'json',
+				success: function(data){
+				if(data.length > 0){ 
+					window.alert('Produk berhasil ditambahkan ke keranjang.');
+					window.location = id;
+				}}});
+				
+			}
+		}); 
+		});
+</script>
 </body>
 
 </html>

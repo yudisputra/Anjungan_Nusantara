@@ -206,11 +206,9 @@
 										<div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
 											<div class="product_image d-flex flex-column align-items-center justify-content-center"><a href="<?php echo base_url()?>Welcome/detail_produk/<?php echo $key->produk_id ?>"><img src="<?php echo base_url("assets/foto/foto_produk/$key->produk_foto_depan")?>" alt="" style="width:150px;height:150px"></a></div>
 											<div class="product_content">
-												<br>
-												<br>
-												<br>
-												<div class="product_price"><a href="<?php echo base_url()?>Welcome/detail_produk/<?php echo $key->produk_id ?>">Rp <?php echo $key->produk_harga ?></a></div>
-												<div class="product_name"><div><?php echo $key->produk_nama ?></div></div>
+												
+												<div class="product_price" style="font-size: 14px;"><a href="<?php echo base_url()?>Welcome/detail_produk/<?php echo $key->produk_id ?>">Rp <?php echo $key->produk_harga ?></a></div>
+												<div class="product_name" style="font-size: 14px;"><div><?php echo $key->produk_nama ?></div></div>
 												<div class="product_extras">
 													<!-- <div class="product_color">
 														<input type="radio" checked name="product_color" style="background:#b19c83">
@@ -231,6 +229,8 @@
 								</div>
 								<div class="featured_slider_dots_cover"></div>
 							</div>
+
+							<br><br><br>
 
 							<!-- Product Panel -->
 
@@ -525,7 +525,7 @@
 									</div>
 
 								</div>
-								<div class="featured_slider_dots_cover"></div>
+								
 							</div>
 						</div>
 					</div>
@@ -534,6 +534,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<!-- Popular categories -->
 
@@ -607,15 +608,15 @@
 											<div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
 												<div class="product_image d-flex flex-column align-items-center justify-content-center"><a href="<?php echo base_url()?>Welcome/detail_product/<?php echo $key->produk_id?>"><img src="<?php echo base_url("assets/foto/foto_produk/$key->produk_foto_depan")?>" width="150" height="200"></a></div>
 												<div class="product_content">
-													<div class="product_price">Rp <?php echo $key->produk_harga?></div>
-													<div class="product_name"><div><a href="<?php echo base_url()?>Welcome/detail_product/<?php echo $key->produk_id?>"><?php echo $key->produk_nama?></a></div></div>
+													<div class="product_price" style="font-size:14px;">Rp <?php echo $key->produk_harga?></div>
+													<div class="product_name" style="font-size:14px;"><div><a href="<?php echo base_url()?>Welcome/detail_product/<?php echo $key->produk_id?>"><?php echo $key->produk_nama?></a></div></div>
 													<div class="product_extras">
-														<div class="product_color">
+														<div class="product_color" style="border: 0px;">
 															<input type="radio" checked name="product_color" style="background:#b19c83">
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button"><a href="<?php echo base_url()?>Detail_Product">Tambahkan Keranjang</a></button>
+														<button class="product_cart_button"><a href="<?php echo base_url()?>Detail_Product" style="color: #fff;">Tambahkan Keranjang</a></button>
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -710,7 +711,7 @@
 												<div class="arrivals_single_price text-right">Rp 125.000</div>
 											</div>
 											<div class="rating_r rating_r_4 arrivals_single_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<form action="#"><button class="arrivals_single_button"><a href="<?php echo base_url()?>Detail_Product">Tambahkan Keranjang</a></button></form>
+											<button class="arrivals_single_button"><a href="<?php echo base_url()?>Detail_Product" style="color: #FFF;">Tambahkan Keranjang</a></button>
 										</div>
 										<div class="arrivals_single_fav product_fav active"><i class="fas fa-heart"></i></div>
 										<ul class="arrivals_single_marks product_marks">

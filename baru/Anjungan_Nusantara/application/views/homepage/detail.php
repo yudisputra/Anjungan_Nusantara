@@ -28,7 +28,6 @@
 						<div class="product_category"><?php echo $detail[0]->subkategori_nama ?></div>
 						<div class="product_name" id="namabarang"><?php echo $detail[0]->produk_nama ?></div>
 						<input id="idbarang" type="text" value="<?php echo $detail[0]->produk_id ?>" style="display:none">
-						<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
 						<div class="product_text"><p><?php echo $detail[0]->produk_deskripsi ?></p></div>
 						<div class="order_info d-flex flex-row">
 							<form action="#">
@@ -61,7 +60,7 @@
 
 								</div>
 
-								<div class="product_price" id="hargabarang">Rp <?php echo number_format($detail[0]->produk_harga,2,",",".") ?></div>
+								<div class="product_price" id="hargabarang">Rp <?php echo $detail[0]->produk_harga ?></div>
 								<div class="button_container">
 									<button type="button" class="button cart_button" id="cekkeranjang">Tambahkan Keranjang</button>
 									<div class="product_fav"><i class="fas fa-heart"></i></div>

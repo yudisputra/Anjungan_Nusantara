@@ -26,10 +26,13 @@ class Keranjang extends CI_Controller {
 	public function index()
 	{
 		$list_bank = $this->Bank_model->get_all();
-		$data = array( 
-			'list_bank' => $list_bank
+		$data = array(
+			'list_bank' => $list_bank,
+			'header' => 'homepage/header',
+			'content' => 'homepage/keranjang',
+			'footer' => 'homepage/footer',
 		);
-		$this->load->view('home/keranjang', $data);
+		$this->load->view('homepage/template', $data);
 	}
 
 	public function tambah(){
@@ -65,10 +68,13 @@ class Keranjang extends CI_Controller {
 			'bank' => $bank,
 			'item' => $item,
 			'total' => $total,
-			'databank' => $databank
+			'databank' => $databank,
+			'header' => 'homepage/header',
+			'content' => 'homepage/checkout',
+			'footer' => 'homepage/footer',
 		);
 
-		$this->load->view('home/checkout', $data);
+		$this->load->view('homepage/template', $data);
 	}
 
 	public function pesan(){
