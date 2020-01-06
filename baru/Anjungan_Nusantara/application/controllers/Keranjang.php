@@ -123,12 +123,15 @@ class Keranjang extends CI_Controller {
 		$datasukses = array(
 			'kode' => $kode,
 			'total' => $total,
-			'databank' => $databank
+			'databank' => $databank,
+			'header' => 'homepage/header',
+			'content' => 'homepage/sukses_pesan',
+			'footer' => 'homepage/footer',
 		);
 
 		$this->reset_keranjang();
 
-		$this->load->view("home/sukses_pesan", $datasukses);
+		$this->load->view('homepage/template', $datasukses);
 	}
 
 	public function teshalaman(){

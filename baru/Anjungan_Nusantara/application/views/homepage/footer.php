@@ -290,6 +290,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?php echo base_url('') ?>assets/template/plugins/slick-1.8.0/slick.js"></script>
 <script src="<?php echo base_url('') ?>assets/template/plugins/easing/easing.js"></script>
 <script src="<?php echo base_url('') ?>assets/template/js/custom.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="<?php echo base_url('') ?>assets/template/js/shop_custom.js"></script>
 <script type="text/javascript">
         $(document).ready( function () {
 

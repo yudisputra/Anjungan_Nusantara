@@ -9,13 +9,21 @@
                         <div class="contact_form_subtitle"><h4>Silahkan Isi Alamat</h4></div>
                         <br>
                         <?php echo form_open('Keranjang/pesan');?>
-							<div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
-								<input type="text"  class="contact_form_name input_field" name="nama" placeholder="Nama Pemesan">
-								<input type="text"  class="contact_form_phone input_field" name="hape" placeholder="Nomor Handphone">
-							</div>
-							<div class="contact_form_text">
-								<textarea class="text_field contact_form_message" name="alamat" rows="6" placeholder="Masukkan Alamat Lengkap"></textarea>
-                            </div>
+                                <div class="form-group">
+                                    <label for="nama">Nama Pemesan</label>
+                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Pemesanan">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="alamat">Alamat Pemesan</label>
+                                    <textarea class="form-control" id="alamat" name="alamat" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hape">Nomor Handphone</label>
+                                    <input type="text" class="form-control" name="hape" id="hape" placeholder="Nomor Handphone"></div>  
+                                </div>
+                            <br>
                             <!-- Order Total -->
                             <div class="order_total">
                                 <div class="order_total_content text-md-right">
@@ -32,8 +40,11 @@
                                     <input type="text" name="namabank" value="<?php echo $databank[0]->bank_nama ?>" style="display:none">
                                 </div>
                             </div>
+                            
+
 							<div class="contact_form_button">
-								<button type="submit" class="button contact_submit_button">Pesan</button>
+							<br>
+                            	<button type="submit" class="button cart_button_checkout">Pesan</button>
                             </div>
                         <?php echo form_close(); ?>
 					</div>
@@ -42,3 +53,4 @@
 		</div>
 		<div class="panel"></div>
 	</div>
+    <br>

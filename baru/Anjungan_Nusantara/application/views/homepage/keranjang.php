@@ -69,15 +69,17 @@
 
 						<div class="order_total">
 							<div class="order_total_content text-md-left">
-							<div class="order_total_title">Pilih Bank:
-							<?php echo form_open('keranjang/checkout'); ?>
-							<select class="form-control" name="bank">
-							<?php foreach ($list_bank as $key) { ;?>
-                                    <option value="<?php echo $key->bank_id; ?>"><?php echo $key->bank_nama ?></option>
-                            <?php } ?>
-							</select>
-							</div>
-							</div>
+								<div class="order_total_title">Pilih Bank:</div>
+									<div class="order_total_amount">
+										<?php echo form_open('keranjang/checkout'); ?>
+										<select class="form-control" name="bank">
+										<?php foreach ($list_bank as $key) { ;?>
+												<option value="<?php echo $key->bank_id; ?>"><?php echo $key->bank_nama ?></option>
+										<?php } ?>
+										</select>
+									</div>
+								
+								</div>
 						</div>
 
 						<div class="cart_buttons">
