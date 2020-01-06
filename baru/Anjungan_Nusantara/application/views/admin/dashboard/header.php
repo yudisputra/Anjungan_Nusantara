@@ -1,4 +1,5 @@
         <link rel="stylesheet" href="<?php  echo base_url()?>assets_global/vendor/chartist/chartist.css">
+        <link rel="stylesheet" href="<?php echo base_url('assets/sweetalert/sweetalert2.min.css')?>">
         <link rel="stylesheet" href="<?php  echo base_url()?>assets_global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
         <link rel="stylesheet" href="<?php  echo base_url()?>assets/examples/css/dashboard/v1.css">
         <link rel="stylesheet" href="<?php  echo base_url()?>assets/examples/css/charts/chartjs.css">

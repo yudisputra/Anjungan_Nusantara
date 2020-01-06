@@ -3,7 +3,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="<?php echo base_url() ?>">Home</a></li>
     <li class="breadcrumb-item"><a href="javascript:void(0)">Manajemen Akun</a></li>
-    <li class="breadcrumb-item active">Manajemen Akun Pembeli</li>
+    <li class="breadcrumb-item active">Manajemen </li>
   </ol>
 </div>
 
@@ -14,52 +14,51 @@
       <h3 class="panel-title">Akun Pembeli</h3>
     </header>
     <div class="panel-body">
-      <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal"><i class="icon md-plus-circle"></i>Tambah Data</button>
-      <table id="table-data"class="table table-hover dataTable table-striped w-full" data-url="<?php echo base_url($ctrlname.'/get_list_position') ?>">
-        
-      </table>
+      <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-target="#exampleTabs" data-toggle="modal"><i class="icon md-plus-circle"></i>Tambah Data</button>
+      <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>E-mail</th>
+                  <th>No Handphone</th>
+                  <?php if($judul == "Penjual") { ?>
+                     <th>Status</th>
+                  <?php } ?>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $i = 1; foreach ($data_akun as $key) { ?>
+                    <tr>
+                      <td><?php echo $i ?></td>
+                      <td><?php echo $key->profile_nama ?></td>
+                      <td><?php echo $key->e_mail ?></td>
+                      <td><?php echo $key->profile_no_hp ?></td>
+                      <?php if($judul == "Penjual") { $status = $key->login_status ; if($status == "Terverifikasi") { ?>
+                          <td><button id="<?php echo $key->login_id ?>" type="button" class="btn btn-info btnStatus"><?php echo $status ?></button></td>
+                      <?php }else{  ?>
+                         <td><button id="<?php echo $key->login_id ?>" type="button" class="btn btn-danger btnStatus"><?php echo $status ?></button></td>
+                        <?php }} ?>
+                      <td class="actions">
+                         <button type="submit" class="btn btn-info" id="<?php echo $key->login_profile_id ?>" data-target="#exampleInfo" data-toggle="modal">Info</button>
+                         <button type="submit" class="btn btn-success"data-target="#exampleUpdate" data-toggle="modal" id="<?php echo $key->login_profile_id ?>">Update</button>
+                         <button type="submit" class="btn btn-warning" id="<?php echo $key->login_profile_id ?>">Hapus</button>
+                      </td>
+                    </tr>
+                <?php $i++ ;} ?>
+                <!-- <tr>
+                  <td>Damon</td>
+                  <td>5516 Adolfo Green</td>
+                  <td>Littelhaven</td>
+                </tr> -->
+              </tbody>
+            </table>
     </div>
   </div>
 </div>
 
 <script>
-  // var url_register = '<?php echo base_url($ctrlname.'/check') ?>'
-  $(document).ready(function(){
-    var table_url = $('#table-data').data('url');
-    $('#table-data').DataTable({
-      "ajax":{
-        'url' : table_url,
-      },
-      "columns":[{
-        "title" : "#",
-        "width": "5%",
-        "data": null,
-        "visible": true,
-        "class": "text-center",
-        render:(data,type,row, meta)=>{
-          return meta.row + meta.settings._iDisplayStart+1;
-        }
-      },{
-        "title" : "Position Name",
-        "width" : "200px",
-        "data" : "applicator_position"
-      },{
-        "title" : "Actions",
-        "width" : "15%",
-        "class" : "text-center",
-        "data": (data, type, row) => {
-          let _return = "";
-          _return += '<a href="javascript:void(0)" class="btn btn-icon btn-success waves-effect waves-classic update-class"data-id="'+data.id+'"> <i class="icon md-edit"></i></a> &nbsp;'+''+'<a href="javascript:void(0)" data-id="'+data.id+'"" class="btn btn-icon btn-danger waves-effect waves-classic delete-class"> <i class="icon md-delete"></i></a>';
-          
-          return _return;
-        }
-      }]
-    });
 
-  });
-
-  function reload_table() {
-    $('#table-data').DataTable().ajax.reload(null,false);
-  }
 
 </script>

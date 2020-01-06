@@ -1,229 +1,173 @@
 <!--MODAL-->
 <!--Modal Add period -->
-<div class="modal fade" id="insertModal" aria-hidden="true" aria-labelledby="insertModal" role="dialog" tabindex="-1">
-  <div class="modal-dialog">
-    <form class="modal-content form-horizontal" id="insertDataForm">
-      <div class="modal-header">
-        <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
-        <h4 class="modal-title">Data Profil dan Login Baru</h4>
-      </div>
-      <ul class="nav nav-tabs nav-tabs-line" role="tablist">
-        <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#exampleLine1"
-          aria-controls="exampleLine1" role="tab">Data Profil</a>
-        </li>
-        <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#exampleLine2"
-          aria-controls="exampleLine2" role="tab">Data Login</a>
-        </li>
-      </ul>
-      <div class="modal-body">
-        <div class="tab-content">
-          <div class="tab-pane active" id="exampleLine1" role="tabpanel">
-            <div class="example-grid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h4 class="example-title">Nama</h4>
-                  <p id="errorNewNama" style="color: red"></p>
-                  <input id="newNama" type="text" class="form-control" name="nama" placeholder="Nama">
-                </div>
-                <div class="col-lg-6">
-                  <h4 class="example-title">No Handphone</h4>
-                  <p id="errorNewHape" style="color: red"></p>
-                  <input id="newHape" type="text" class="form-control" name="no_hp" placeholder="No Handphone">
-                </div>
-              </div>
+<div class="modal fade" id="exampleUpdate" aria-hidden="true" aria-labelledby="examplePositionCenter"
+                            role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-simple modal-center">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                  </button>
+                                  <h4 class="modal-title">Informasi Produk</h4>
+                                </div>
 
-              <br>
+                                <div class="modal-body">
 
-              <div class="row">
-                <div class="col-lg-6">
-                  <h4 class="example-title">Alamat</h4>
-                  <p id="errorNewAlamat" style="color: red"></p>
-                  <input id="newAlamat" type="text" class="form-control" name="alamat" placeholder="Alamat">
-                </div>
-              </div>
+                                <div class="example-grid">
+                                <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="example-title">Nama Produk</h4>
+                                    <p id="errorUpdateNama" style="color: red"></p>
+                                    <input type="text" class="form-control infoNama" id="namaProduk">
 
-            </div>
-          </div>
-          <div class="tab-pane" id="exampleLine2" role="tabpanel">
-            <div class="example-grid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h4 class="example-title">E-mail</h4>
-                  <p id="errorNewEmail" style="color: red"></p>
-                  <input id="newEmail" type="text" class="form-control" name="email" placeholder="E-mail">
-                </div>
-                <div class="col-lg-6">
-                  <h4 class="example-title">Password</h4>
-                  <p id="errorNewPassword" style="color: red"></p>
-                  <input id="newPassword" type="text" class="form-control" name="password" placeholder="Password">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <button id="btnBaru" type="submit" class="btn btn-primary float-right">Simpan</button>
-      </div>
-    </form>
-  </div>
-</div>
+                                    <h4 class="example-title">Harga Produk</h4>
+                                    <p id="errorUpdateHarga" style="color: red"></p>
+                                    <input type="text" class="form-control infoNama" id="hargaProduk">
 
-<!--Modal update-->
-<div class="modal fade" id="updateModal" aria-hidden="true" aria-labelledby="updateModal" role="dialog" tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content form-horizontal">
-      <div class="modal-header">
-        <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
-        <h4 class="modal-title">Edit position</h4>
-      </div>
-      <div class="modal-body">
-        <div id="formData">
+                                    <h4 class="example-title">Stok Produk</h4>
+                                    <p id="errorUpdateStok" style="color: red"></p>
+                                    <input type="text" class="form-control infoNama" id="stokProduk">
 
-        </div>
-    </div>
-  </div>
-</div>
+                                    <input type="text" class="form-control infoNama" id="idProduk" style="display:none">
+                                </div>
+                                <div class="col-lg-6">
+                                   
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button id="btnUpdate" type="submit" class="btn btn-primary">Simpan</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
-<script>
-$(document).ready(function () {
-  //insert
-  $('#insertDataForm').on('submit',function(){
-    var position_name = $('#position_name').val();
+                          <script type="text/javascript">
+      $(document).ready( function () {
+        $('.btnStatus').click(function(){ 
+               $.ajax({
+                                  url : "<?php echo base_url();?>Admin/ganti_status_produk",
+                                  method : "POST",
+                                  data : { id : this.id},
+                                  async : false,
+                                  dataType : 'json',
+                                  success: function(data){ 
+                                    Swal.fire({
+                                                title: data,
+                                                type: 'success',
+                                                confirmButtonColor: '#3085d6',
+                                                confirmButtonText: 'OK'
+                                              }).then((result) => {
+                                                if (result.value) {
+                                                  location.reload();
+                                                }
+                                              })
 
-    $.ajax({
-      type: "post",
-      url: "<?php echo base_url($ctrlname.'/position_insert') ?>",
-      beforeSend :function (){
-        swal({
-          title: 'Waiting',
-          html: 'Proccessing data',
-          onOpen: ()=>{
-            swal.showLoading()
-          }
-        })
-      },
-      data: {position_name:position_name},
-      dataType: "JSON",
-      success: function(data){
-        $('#table-data').DataTable().ajax.reload(null,false);
-        swal({
-          type:'success',
-          title: 'Data Added',
-          text: 'Succesfully added item'
-        })
-        $('#insertModal').modal('hide');
-        $('#position_name').val('');
-      }
-    })
-    return false;
-  });
+                                  }});
 
-  // fungsi untuk edit data
-  //pilih selector dari table id datamahasiswa dengan class .ubah-mahasiswa
-  $('#table-data').on('click','.update-class', function () {
-  // ambil element id pada saat klik ubah
-  var id =  $(this).data('id');
-          
-     $.ajax({
-      type: "post",
-      url: "<?php echo base_url($ctrlname.'/form_update_position')?>",
-      beforeSend :function () {
-        swal({
-          title: 'Processing',
-          html: 'Processing data',
-          onOpen: () => {
-            swal.showLoading()
-          }
-        })      
-      },
-      data: {id:id},
-      success: function (data) {
-        swal.close();
-        $('#updateModal').modal('show');
-        $('#formData').html(data);
-        
-        // proses untuk mengubah data
-        $('#formUpdate').on('submit', function () {
-            var edit_position_name = $('#edit_position_name').val(); // diambil dari id nama yang ada diform modal
-            var edit_id = $('#edit_id').val(); //diambil dari id yang ada di form modal
-            $.ajax({
-              type: "POST",
-              url: "<?php echo base_url($ctrlname.'/position_update')?>",
-              beforeSend :function () {
-                swal({
-                  title: 'Waiting',
-                  html: 'Processing data',
-                  onOpen: () => {
-                    swal.showLoading()
-                  }
-                })      
-              },
-              data: {edit_position_name:edit_position_name, id:id}, // ambil datanya dari form yang ada di variabel
-              
-              success: function (data) {
-                $('#table-data').DataTable().ajax.reload(null,false);
-                swal({
-                  type: 'success',
-                  title: 'Data Updated',
-                  text: 'Succesfully updated data'
-                })
-                  // bersihkan form pada modal
-                  $('#updateModal').modal('hide');
-                }
-            })
-          return false;
-        });
-      }
-    });
-  });
-  
-  //delete
-  // fungsi untuk hapus data
-  //pilih selector dari table id datamahasiswa dengan class .hapus-mahasiswa
-  $('#table-data').on('click','.delete-class', function () {
-    var id =  $(this).data('id');
-    swal({
-        title: 'Confirmation',
-        text: "Do you want to delete? ",
-        type: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Delete',
-        confirmButtonColor: '#d33',
-        cancelButtonColor: '#3085d6',
-        cancelButtonText: 'Cancel',
-        reverseButtons: true
-      }).then((result) => {
+          });
+
+          $('.btn-success').click(function(){ 
+               $.ajax({
+                                  url : "<?php echo base_url();?>Admin/proses_produk",
+                                  method : "POST",
+                                  data : { id : this.id, tipe : 'ambil'},
+                                  async : false,
+                                  dataType : 'json',
+                                  success: function(data){ 
+                                       
+                                        $('#idProduk').val(data.produk_id);
+                                        $('#namaProduk').val(data.produk_nama);
+                                        $('#hargaProduk').val(data.produk_harga);
+                                        $('#stokProduk').val(data.produk_stock);
+                                      
+                                  }});
+
+          });
+
+          $('#btnUpdate').click(function(){ 
+             var updateNama = $('#namaProduk').val();
+             var updateHarga = $('#hargaProduk').val();
+             var updateStok = $('#stokProduk').val();
+             var updateId =  $('#idProduk').val();
+
+
+             if( updateNama== ""){
+                 $('#errorUpdateNama').html("Nama tidak Boleh Kosong");
+             }
+             else if( updateHarga == ""){
+                 $('#errorUpdateHarga').html("Harga tidak Boleh Kosong");
+             }
+            else if(updateStok == ""){
+                 $('#errorUpdateStok').html("Stok tidak Boleh Kosong");
+             }
+             else{
+
+                 $.ajax({
+                                  url : "<?php echo base_url();?>Admin/proses_produk",
+                                  method : "POST",
+                                  data : { id: updateId, nama : updateNama, harga : updateHarga, stok : updateStok, tipe :"update"},
+                                  async : false,
+                                  dataType : 'json',
+                                  success: function(data){
+
+                                            
+                                             $('#exampleUpdate').hide();
+                                             $('.modal-backdrop').hide();
+
+
+                                            Swal.fire({
+                                                title: data,
+                                                type: 'success',
+                                                confirmButtonColor: '#3085d6',
+                                                confirmButtonText: 'OK'
+                                              }).then((result) => {
+                                                if (result.value) {
+                                                  location.reload();
+                                                }
+                                              })
+                                  }});
+             }
+          });
+
+          $('.btn-warning').click(function(){
+
+// console.log(this.id);
+// alert(this.id);
+Swal.fire({
+    title: 'Apakah anda yakin ?',
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Ya, hapus'
+    }).then((result) => {
         if (result.value) {
-          $.ajax({
-            url:"<?=base_url($ctrlname.'/position_delete')?>",  
-            method:"post",
-            beforeSend :function () {
-            swal({
-                title: 'Waiting',
-                html: 'Processing Data',
-                onOpen: () => {
-                  swal.showLoading()
-                }
-              })      
-            },    
-            data:{id:id},
-            success:function(data){
-              swal(
-                'Delete',
-                'Success Delete',
-                'success'
-              )
-              $('#table-data').DataTable().ajax.reload(null, false)
-            }
-          })
-      } else if (result.dismiss === swal.DismissReason.cancel) {
-          swal(
-            'Cancel',
-            'You Canceled Delete',
-            'error'
-          )
-        }
-      })
-    });
+
+            $.ajax({
+                    url : "<?php echo base_url();?>Penjual/proses_produk",
+                    method : "POST",
+                    data : { id: this.id, tipe : "hapus"},
+                    async : false,
+                    dataType : 'json',
+                    success: function(data){ 
+
+                            Swal.fire({
+                                title: 'Terhapus',
+                                type: 'success',
+                                confirmButtonColor: '#3085d6',
+                                confirmButtonText: 'OK'
+                                }).then((result) => {
+                                if (result.value) {
+                                    location.reload();
+                                }
+                                })
+                    }});
+    
+    }
+})
 });
-</script>
+      });
+    </script>

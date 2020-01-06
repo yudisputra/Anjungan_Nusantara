@@ -21,6 +21,7 @@
         <script src="<?php echo base_url() ?>assets_global/vendor/chart-js/Chart.js"></script>
 
         <!-- SELECT2-->
+        <script src="<?php echo base_url('assets/sweetalert/sweetalert2.all.min.js')?>"></script>
         <script src="<?php echo base_url() ?>assets_global/vendor/select2/select2.full.min.js"></script>
         <script src="<?php echo base_url() ?>assets_global/vendor/bootstrap-select/bootstrap-select.js"></script>
 

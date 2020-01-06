@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/site.css">
     
     <!-- Plugins -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/sweetalert/sweetalert2.min.css')?>">
+    <script src="<?php echo base_url('assets/sweetalert/sweetalert2.all.min.js')?>"></script>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets_global/vendor/animsition/animsition.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets_global/vendor/asscrollable/asScrollable.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets_global/vendor/switchery/switchery.css">

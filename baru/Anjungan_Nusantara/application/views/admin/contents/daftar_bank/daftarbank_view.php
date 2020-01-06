@@ -15,51 +15,36 @@
     </header>
     <div class="panel-body">
       <button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right" id="insertModalBtn" data-toggle="modal" data-target="#insertModal"><i class="icon md-plus-circle"></i>Tambah Rekening Bank</button>
-      <table id="table-data"class="table table-hover dataTable table-striped w-full" data-url="<?php echo base_url($ctrlname.'/get_list_position') ?>">
-        
-      </table>
+      <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Bank</th>
+                  <th>No Rekening</th>
+                  <th>Atas Nama</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $i = 1; foreach ($list_bank as $key) { ?>
+                    <tr>
+                      <td><?php echo $i ?></td>
+                      <td><?php echo $key->bank_nama ?></td>
+                      <td><?php echo $key->no_rekening ?></td>
+                      <td><?php echo $key->atas_nama ?></td>
+                      <td class="actions">
+                         <button type="submit" class="btn btn-success" id="<?php echo $key->bank_id ?>" data-target="#exampleUpdate" data-toggle="modal">Update</button>
+                         <button type="submit" class="btn btn-warning" id="<?php echo $key->bank_id ?>">Hapus</button>
+                      </td>
+                    </tr>
+                <?php $i++ ;} ?>
+              </tbody>
+            </table>
     </div>
   </div>
 </div>
 
 <script>
-  // var url_register = '<?php echo base_url($ctrlname.'/check') ?>'
-  $(document).ready(function(){
-    var table_url = $('#table-data').data('url');
-    $('#table-data').DataTable({
-      "ajax":{
-        'url' : table_url,
-      },
-      "columns":[{
-        "title" : "#",
-        "width": "5%",
-        "data": null,
-        "visible": true,
-        "class": "text-center",
-        render:(data,type,row, meta)=>{
-          return meta.row + meta.settings._iDisplayStart+1;
-        }
-      },{
-        "title" : "Position Name",
-        "width" : "200px",
-        "data" : "applicator_position"
-      },{
-        "title" : "Actions",
-        "width" : "15%",
-        "class" : "text-center",
-        "data": (data, type, row) => {
-          let _return = "";
-          _return += '<a href="javascript:void(0)" class="btn btn-icon btn-success waves-effect waves-classic update-class"data-id="'+data.id+'"> <i class="icon md-edit"></i></a> &nbsp;'+''+'<a href="javascript:void(0)" data-id="'+data.id+'"" class="btn btn-icon btn-danger waves-effect waves-classic delete-class"> <i class="icon md-delete"></i></a>';
-          
-          return _return;
-        }
-      }]
-    });
-
-  });
-
-  function reload_table() {
-    $('#table-data').DataTable().ajax.reload(null,false);
-  }
+  
 
 </script>

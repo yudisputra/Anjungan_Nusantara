@@ -38,10 +38,16 @@
 						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php echo base_url('') ?>assets/template/images/phone.png" alt=""></div>(031) - 8894850</div>
 						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="<?php echo base_url('') ?>assets/template/images/mail.png" alt=""></div><a href="mailto:anjungan_nusantara@gmail.com">anjungan_nusantara@gmail.com</a></div>
 						<div class="top_bar_content ml-auto">
-							<div class="top_bar_user">
-								<div class="user_icon"><img src="<?php echo base_url('') ?>assets/template/images/user.svg" alt=""></div>
-								<div><a href="<?php echo base_url()?>Register">Daftar</a></div>
-								<div><a href="#">Masuk</a></div>
+						<div class="top_bar_user">
+								<?php if($this->session->userdata('logged_in')){ ?>
+								    <br>
+									<div class="user_icon"><a href="<?php echo base_url()?>User"><img src="<?php echo base_url('assets/homepage_lib/images/user.svg')?>" alt=""></a></div>
+									<div><h5>Selamat Datang, <?=$this->session->userdata('username');?></h5></div>
+								<?php } else { ?>
+									<div class="user_icon"><img src="<?php echo base_url('assets/homepage_lib/images/user.svg')?>" alt=""></div>
+									<div><a href="<?php echo base_url()?>Register">Daftar</a></div>
+									<div><a href="<?php echo base_url()?>Login">Masuk</a></div>
+								<?php }?>
 							</div>
 						</div>
 					</div>
@@ -70,17 +76,14 @@
 									<form action="#" class="header_search_form clearfix">
 										<input type="search" required="required" class="header_search_input" placeholder="Pencarian Produk...">
 										<div class="custom_dropdown">
-											<div class="custom_dropdown_list">
+										<div class="custom_dropdown_list">
 												<span class="custom_dropdown_placeholder clc">Semua Kategori</span>
 												<i class="fas fa-chevron-down"></i>
 												<ul class="custom_list clc">
 													<li><a class="clc" href="#">Semua Kategori</a></li>
-													<li><a class="clc" href="shop.html">Aksesoris</a></li>
-													<li><a class="clc" href="shop.html">Kuliner</a></li>
-													<li><a class="clc" href="shop.html">Fashion</a></li>
-													<li><a class="clc" href="shop.html">Kerajinan Tangan</a></li>
-													<li><a class="clc" href="shop.html">Pernak Pernik</a></li>
-													<li><a class="clc" href="shop.html">Produk Kulit</a></li>
+													<?php foreach ($kategori as $key) { ?>
+														<li><a class="clc" href=""><?php echo $key->kategori_nama ?></a></li>
+													<?php } ?>
 												</ul>
 											</div>
 										</div>
@@ -103,7 +106,7 @@
 										<div class="cart_count"><span>1</span></div>
 									</div>
 									<div class="cart_content">
-										<div class="cart_text"><a href="<?php echo base_url('') ?>Welcome/Keranjang/">Keranjang</a></div>
+									<div class="cart_text"><a href="<?php echo base_url()?>Keranjang">Keranjang</a></div>
 										<div class="cart_price">Rp 100.000</div>
 									</div>
 								</div>
@@ -130,110 +133,17 @@
 									<div class="cat_burger"><span></span><span></span><span></span></div>
 									<div class="cat_menu_text">Kategori</div>
 								</div>
-
 								<ul class="cat_menu">
+								<?php foreach ($kategori as $key) { $kategori_id = $key->kategori_id; ?>
 									<li class="hassubs">
-										<a href="#">Aksesoris<i class="fas fa-chevron-right"></i></a>
+										<a href="#"><?php echo $key->kategori_nama ?><i class="fas fa-chevron-right"></i></a>
 										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
+										<?php foreach ($subkategori as $key) { if($kategori_id == $key->subkategori_kategori_id) {?>
+											<li><a href="<?php echo base_url()?>Welcome/show_produk/subkategori/<?php echo $key->subkategori_id ?>"><?php echo $key->subkategori_nama ?><i class="fas fa-chevron-right"></i></a></li>
+										<?php }} ?>
 										</ul>
 									</li>
-									<li class="hassubs">
-										<a href="#">Kuliner<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Fashion<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Kerajinan Tangan<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Pernak Pernik<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
-									<li class="hassubs">
-										<a href="#">Produk Kulit<i class="fas fa-chevron-right"></i></a>
-										<ul>
-											<li class="hassubs">
-												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
-												<ul>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-													<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
-									</li>
+								<?php } ?>
 								</ul>
 							</div>
 

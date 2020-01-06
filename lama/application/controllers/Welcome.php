@@ -127,7 +127,6 @@ class Welcome extends CI_Controller {
 		echo "<pre>";
 		echo var_dump($produk_penjualan_Terbaik_tiga_kategori[0][0]);
 		echo "</pre>";
-		
 	}
 
 	

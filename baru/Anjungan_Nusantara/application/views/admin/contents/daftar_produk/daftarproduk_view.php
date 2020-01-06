@@ -15,51 +15,53 @@
     </header>
     <div class="panel-body">
       <a href="<?php echo base_url() ?>Admin/form_produk_baru"><button type="button" class=" btn btn-raised btn-primary waves-effect waves-classic float-right"><i class="icon md-plus-circle"></i>Tambah Data</button></a>
-      <table id="table-data"class="table table-hover dataTable table-striped w-full" data-url="<?php echo base_url($ctrlname.'/get_list_position') ?>">
-        
-      </table>
+      <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Harga Jual</th>
+                  <th>Stock</th>
+                  <th>Nama Toko</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $i = 1; foreach ($produk_data as $key) { ?>
+                    <tr>
+                      <td><?php echo $i ?></td>
+                      <td><?php echo $key->produk_nama ?></td>
+                      <td><?php echo $key->subkategori_nama ?></td>
+                      <td><?php echo $key->produk_harga ?></td>
+                      <td><?php echo $key->produk_harga_jual ?></td>
+                      <td><?php echo $key->produk_stock ?></td>
+                      <td><?php echo $key->usaha_nama ?></td>
+                      <?php $status = $key->produk_status; if($status == "Disetujui") { ?>
+                          <td><button  type="button" class="btn btn-info btnStatus"><?php echo $status ?></button></td>
+                      <?php }else{  ?>
+                         <td><button id="<?php echo $key->produk_id?>" type="button" class="btn btn-danger btnStatus"><?php echo $status ?></button></td>
+                        <?php } ?>
+                      <td class="actions">
+                         <a href="<?php echo base_url()?>Admin/lihat_foto/<?php echo $key->produk_id ?>"><button type="submit" class="btn btn-info">Foto</button></a>
+                         <button type="submit" class="btn btn-success"  data-target="#exampleUpdate" data-toggle="modal" id="<?php echo $key->produk_id ?>">Update</button>
+                         <button type="submit" class="btn btn-warning" id="<?php echo $key->produk_id ?>">Hapus</button>
+                      </td>
+                    </tr>
+                <?php $i++ ;} ?>
+                <!-- <tr>
+                  <td>Damon</td>
+                  <td>5516 Adolfo Green</td>
+                  <td>Littelhaven</td>
+                </tr> -->
+              </tbody>
+            </table>
     </div>
   </div>
 </div>
 
 <script>
-  // var url_register = '<?php echo base_url($ctrlname.'/check') ?>'
-  $(document).ready(function(){
-    var table_url = $('#table-data').data('url');
-    $('#table-data').DataTable({
-      "ajax":{
-        'url' : table_url,
-      },
-      "columns":[{
-        "title" : "#",
-        "width": "5%",
-        "data": null,
-        "visible": true,
-        "class": "text-center",
-        render:(data,type,row, meta)=>{
-          return meta.row + meta.settings._iDisplayStart+1;
-        }
-      },{
-        "title" : "Position Name",
-        "width" : "200px",
-        "data" : "applicator_position"
-      },{
-        "title" : "Actions",
-        "width" : "15%",
-        "class" : "text-center",
-        "data": (data, type, row) => {
-          let _return = "";
-          _return += '<a href="javascript:void(0)" class="btn btn-icon btn-success waves-effect waves-classic update-class"data-id="'+data.id+'"> <i class="icon md-edit"></i></a> &nbsp;'+''+'<a href="javascript:void(0)" data-id="'+data.id+'"" class="btn btn-icon btn-danger waves-effect waves-classic delete-class"> <i class="icon md-delete"></i></a>';
-          
-          return _return;
-        }
-      }]
-    });
-
-  });
-
-  function reload_table() {
-    $('#table-data').DataTable().ajax.reload(null,false);
-  }
 
 </script>
